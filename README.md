@@ -1,6 +1,4 @@
-# RoederWebAlchemy
-
-# Space Invaders Portfolio - Denis Roeder
+# Denis Roeder - Web-Portfolio
 
 Willkommen zu meinem interaktiven Web-Portfolio! Dieses Projekt kombiniert meine Leidenschaft für Webentwicklung mit einem klassischen Arcade-Spiel, um meinen Fähigkeiten auf kreative und unterhaltsame Weise zu präsentieren.
 
