@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Space Invaders - Denis</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="intro">
+      <div class="intro-text">Willkommen auf meiner Website!</div>
+    </div>
+    <div class="resize-message">
+      <p>
+        Ein Alien kam von fernem Stern,<br />
+        mit einem Spiel, das hat er gern.<br />
+        Doch kleiner Bildschirm, oh wie schade,<br />
+        versteckt sein Spiel, das macht 'ne Lade.<br />
+        Mach’s Fenster groß, wie Raumschiff breit,<br />
+        dann ist das Alien-Spiel bereit!
+      </p>
+    </div>
+    <div class="game-container">
+      <div class="grid"></div>
+      <div class="results">Score: 0</div>
+      <button id="music-toggle">Hintergrundmusik</button>
+    </div>
+    <audio id="background-music" loop>
+      <source src="/music/space-adventure-29296.mp3" type="audio/mpeg" />
+      Your browser does not support the audio element.
+    </audio>
+    <audio id="laser-sound">
+      <source src="/music/space-attack-45505.mp3" type="audio/mpeg" />
+      Your browser does not support the audio element.
+    </audio>
+    <audio id="explosion-sound">
+      <source
+        src="/music/space-explosion-with-reverb-101449.mp3"
+        type="audio/mpeg"
+      />
+      Your browser does not support the audio element.
+    </audio>
+    <script src="script.js"></script>
+  </body>
+</html>

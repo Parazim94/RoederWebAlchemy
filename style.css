@@ -1,0 +1,191 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #292929;
+  color: #fff;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.intro {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+  text-align: center;
+}
+
+.intro-text {
+  font-size: 36px;
+  animation: fadeInOut 5s ease-in-out;
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.game-container {
+  display: none;
+  position: relative;
+  text-align: center;
+}
+
+.grid {
+  width: 600px;
+  height: 800px;
+  background-color: #111;
+  position: relative;
+  overflow: visible;
+  border-radius: 10px;
+}
+
+.shooter {
+  width: 60px;
+  height: 60px;
+  background: url("/images/shooter.webp") no-repeat center center;
+  background-size: contain;
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.invader {
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 24px;
+  animation: invaderMove 1s linear infinite alternate;
+}
+
+@keyframes invaderMove {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(20px);
+  }
+}
+
+.hit {
+  animation: hitAnimation 0.3s linear;
+}
+
+@keyframes hitAnimation {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.2);
+  }
+}
+
+.boom {
+  width: 60px;
+  height: 60px;
+  background: url("/images/explosion.png") no-repeat center center;
+  background-size: contain;
+  position: absolute;
+  animation: boomAnimation 0.3s linear;
+}
+
+@keyframes boomAnimation {
+  from {
+    opacity: 1;
+    transform: scale(1);
+  }
+  to {
+    opacity: 0;
+    transform: scale(2);
+  }
+}
+
+.laser {
+  width: 5px;
+  height: 20px;
+  background: url("/images/laser.png") no-repeat center center;
+  background-size: contain;
+  position: absolute;
+}
+
+.results {
+  margin-top: 20px;
+  font-size: 24px;
+}
+
+#music-toggle {
+  margin-top: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.invader-denis {
+  color: red;
+}
+
+.invader-website {
+  color: green;
+}
+
+.invader-portfolio {
+  color: rgb(255, 0, 242);
+}
+
+.invader-welcome {
+  color: orange;
+}
+
+.invader-to {
+  color: rgb(0, 204, 255);
+}
+
+/* Media Query to hide elements on smaller screens */
+@media (max-width: 800px), (max-height: 900px) {
+  .grid,
+  .game-container,
+  .results,
+  #music-toggle {
+    display: none;
+  }
+}
+
+/* Media Query to hide resize message on larger screens */
+@media (min-width: 801px) and (min-height: 901px) {
+  .resize-message {
+    display: none;
+  }
+}
+
+.resize-message {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  font-size: 24px;
+}
