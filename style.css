@@ -513,7 +513,7 @@ body {
   background-color: #0056b3;
 }
 
-contact-container {
+.contact-container {
   max-width: 600px;
   margin: 20px;
   padding: 20px;
