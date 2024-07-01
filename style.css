@@ -351,3 +351,224 @@ body {
 .menu-link:hover {
   background-color: #0056b3;
 }
+
+.projects-container {
+  max-width: 1200px;
+  margin: 20px;
+}
+
+.projects-container h1 {
+  margin-bottom: 20px;
+}
+
+.projects-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.project-card {
+  background-color: #383838;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  transition: transform 0.3s, background-color 0.3s;
+  width: 300px;
+  text-align: left;
+}
+
+.project-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.project-card h2 {
+  margin: 15px;
+  font-size: 24px;
+}
+
+.project-card p {
+  margin: 0 15px 15px;
+  font-size: 16px;
+}
+
+.project-card a {
+  display: block;
+  margin: 15px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.project-card a:hover {
+  background-color: #0056b3;
+}
+
+.project-card:hover {
+  background-color: #4a4a4a;
+  transform: translateY(-5px);
+}
+
+.menu-link {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.menu-link:hover {
+  background-color: #0056b3;
+}
+
+.labs-container {
+  max-width: 1200px;
+  margin: 20px;
+}
+
+.labs-container h1 {
+  margin-bottom: 20px;
+}
+
+.labs-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.lab-card {
+  background-color: #383838;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  transition: transform 0.3s, background-color 0.3s;
+  width: 300px;
+  text-align: left;
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.lab-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.lab-card-content {
+  padding: 15px;
+}
+
+.lab-card h2 {
+  margin: 0 0 10px 0;
+  font-size: 24px;
+}
+
+.lab-card p {
+  margin: 0 0 15px 0;
+  font-size: 16px;
+}
+
+.lab-card a {
+  display: block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.lab-card a:hover {
+  background-color: #0056b3;
+}
+
+.lab-card:hover {
+  background-color: #4a4a4a;
+  transform: translateY(-5px);
+}
+
+.menu-link {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.menu-link:hover {
+  background-color: #0056b3;
+}
+
+contact-container {
+  max-width: 600px;
+  margin: 20px;
+  padding: 20px;
+  background-color: #383838;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: left;
+}
+
+.contact-container h1 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+  margin-bottom: 15px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #4a4a4a;
+  color: #fff;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  background-color: #5a5a5a;
+}
+
+.contact-form button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+  background-color: #0056b3;
+}
+
+
+.menu-link:hover {
+  background-color: #0056b3;
+}
