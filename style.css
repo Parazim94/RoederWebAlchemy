@@ -1,9 +1,14 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
-  margin: 0;
   background-color: #292929;
   color: #fff;
   font-family: "Courier New", Courier, monospace;
@@ -21,11 +26,37 @@ body {
   align-items: center;
   z-index: 10;
   text-align: center;
+  opacity: 1;
+  transition: opacity 1s ease-in-out;
 }
 
-.intro-text {
-  font-size: 36px;
-  animation: fadeInOut 5s ease-in-out;
+.intro.hidden {
+  opacity: 0;
+}
+
+.text {
+  font-weight: 100;
+  font-size: 28px;
+  color: #fafafa;
+}
+
+.dud {
+  color: #757575;
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 
 @keyframes fadeInOut {
@@ -296,7 +327,8 @@ body {
   color: #ffd700; /* Gold color on hover */
 }
 
-.menu-card, .about-card {
+.menu-card,
+.about-card {
   width: 300px;
   padding: 20px;
   background-color: #383838;
@@ -306,18 +338,21 @@ body {
   text-align: center;
 }
 
-.menu-card a, .about-card a {
+.menu-card a,
+.about-card a {
   color: #fff;
   text-decoration: none;
   font-size: 18px;
 }
 
-.menu-card:hover, .about-card:hover {
+.menu-card:hover,
+.about-card:hover {
   background-color: #4a4a4a;
   transform: translateY(-5px);
 }
 
-.menu-card a:hover, .about-card a:hover {
+.menu-card a:hover,
+.about-card a:hover {
   color: #ffd700; /* Gold color on hover */
 }
 
@@ -567,7 +602,6 @@ body {
 .contact-form button:hover {
   background-color: #0056b3;
 }
-
 
 .menu-link:hover {
   background-color: #0056b3;
