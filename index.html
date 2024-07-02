@@ -5,7 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Web-Portfolio - Denis Roeder</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
   </head>
   <body>
     <div class="intro">
@@ -23,8 +26,10 @@
     </div>
     <div class="game-container">
       <div class="grid"></div>
-      <div class="results">Score: 0</div>
-      <button id="music-toggle">Hintergrundmusik</button>
+      <div class="score-music-container">
+        <div class="results">Score: 0</div>
+        <button id="music-toggle">Hintergrundmusik</button>
+      </div>
     </div>
     <audio id="background-music" loop>
       <source src="/music/space-adventure-29296.mp3" type="audio/mpeg" />
@@ -42,18 +47,24 @@
       Your browser does not support the audio element.
     </audio>
     <div class="ribbon">
-      <a href="https://github.com/YourGitHubProfile" target="_blank">FOLLOW ON GITHUB</a>
-  </div>
-  <div class="menu-icon">
-    <a href="menu.html"><i class="fas fa-bars"></i></a>
-</div>
-  <div class="social-icons">
+      <a href="https://github.com/YourGitHubProfile" target="_blank"
+        >FOLLOW ON GITHUB</a
+      >
+    </div>
+    <div class="menu-icon">
+      <a href="menu.html"><i class="fas fa-bars"></i></a>
+    </div>
+    <div class="social-icons">
       <a href="https://github.com/YourGitHubProfile" target="_blank">
-          <img src="/images/github-icon.webp" alt="GitHub">
+        <img src="/images/github-icon.webp" alt="GitHub" />
       </a>
       <a href="https://linkedin.com/in/YourLinkedInProfile" target="_blank">
-          <img src="/images/linkedin.webp" alt="LinkedIn">
+        <img src="/images/linkedin.webp" alt="LinkedIn" />
       </a>
+    </div>
+    <div class="navigation">
+      <a href="about.html" class="arrow right">&gt;</a>
+    </div>
     <script src="script.js"></script>
   </body>
 </html>

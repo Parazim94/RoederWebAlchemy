@@ -94,12 +94,20 @@ document.addEventListener("DOMContentLoaded", () => {
   const resultsDisplay = document.querySelector(".results");
   const musicToggle = document.getElementById("music-toggle");
   const backgroundMusic = document.getElementById("background-music");
-
+  
   musicToggle.addEventListener("click", () => {
     if (backgroundMusic.paused) {
-      backgroundMusic.play();
+      backgroundMusic
+        .play()
+        .then(() => {
+          console.log("Hintergrundmusik wird abgespielt");
+        })
+        .catch((error) => {
+          console.error("Fehler beim Abspielen der Hintergrundmusik:", error);
+        });
     } else {
       backgroundMusic.pause();
+      console.log("Hintergrundmusik ist pausiert");
     }
   });
 
@@ -151,7 +159,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Play laser sound
     const laserSound = document.getElementById("laser-sound");
-    laserSound.play();
+    laserSound
+      .play()
+      .then(() => {
+        console.log("Laser Sound wird abgespielt");
+      })
+      .catch((error) => {
+        console.error("Fehler beim Abspielen des Laser Sounds:", error);
+      });
 
     const laserInterval = setInterval(() => {
       laser.style.bottom = `${parseInt(laser.style.bottom) + 10}px`;

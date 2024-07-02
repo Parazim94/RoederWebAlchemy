@@ -59,21 +59,6 @@ body {
   }
 }
 
-@keyframes fadeInOut {
-  0% {
-    opacity: 0;
-  }
-  20% {
-    opacity: 1;
-  }
-  80% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-
 .game-container {
   display: none;
   position: relative;
@@ -162,16 +147,34 @@ body {
   position: absolute;
 }
 
-.results {
+.score-music-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
   margin-top: 20px;
+}
+
+.results {
   font-size: 24px;
 }
 
 #music-toggle {
-  margin-top: 10px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
   padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
   font-size: 16px;
   cursor: pointer;
+  border-radius: 12px;
+  transition: background-color 0.3s ease;
+}
+
+#music-toggle:hover {
+  background-color: #45a049;
 }
 
 .invader-denis {
@@ -256,7 +259,7 @@ body {
   position: fixed;
   top: 50%;
   left: 0;
-  transform: translateY(-50%);
+  transform: translateY(90%);
   display: flex;
   flex-direction: column;
 }
@@ -605,4 +608,26 @@ body {
 
 .menu-link:hover {
   background-color: #0056b3;
+}
+
+.arrow {
+  cursor: pointer;
+  font-size: 3rem;
+  padding: 0 1rem;
+  color: #fff;
+  text-decoration: none;
+  transition: transform 0.3s ease;
+  position: absolute;
+}
+
+.arrow:hover {
+  transform: scale(1.2);
+}
+
+.arrow.left {
+  left: 10px;
+}
+
+.arrow.right {
+  right: 10px;
 }
