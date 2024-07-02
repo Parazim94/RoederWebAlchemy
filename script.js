@@ -94,7 +94,26 @@ document.addEventListener("DOMContentLoaded", () => {
   const resultsDisplay = document.querySelector(".results");
   const musicToggle = document.getElementById("music-toggle");
   const backgroundMusic = document.getElementById("background-music");
-  
+
+  const intro = document.querySelector(".intro");
+  const gameContainer = document.querySelector(".game-container");
+  const body = document.querySelector("body");
+
+  // Funktion zum Verstecken des Intros
+  const hideIntro = () => {
+    intro.classList.add("hidden");
+    setTimeout(() => {
+      intro.style.display = "none";
+      gameContainer.style.display = "block";
+    }, 1000); // Zeit für die Transition
+  };
+
+  // Event-Listener für Klick auf das Intro
+  intro.addEventListener("click", hideIntro);
+
+  // Automatisches Ausblenden des Intros nach einer gewissen Zeit
+  setTimeout(hideIntro, 10000); // 10 Sekunden
+
   musicToggle.addEventListener("click", () => {
     if (backgroundMusic.paused) {
       backgroundMusic
