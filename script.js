@@ -94,7 +94,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const resultsDisplay = document.querySelector(".results");
   const musicToggle = document.getElementById("music-toggle");
   const backgroundMusic = document.getElementById("background-music");
-
+  let score = 0;
   const intro = document.querySelector(".intro");
   const gameContainer = document.querySelector(".game-container");
   const body = document.querySelector("body");
@@ -214,17 +214,18 @@ document.addEventListener("DOMContentLoaded", () => {
               grid.removeChild(invader);
               invaders.splice(index, 1);
             }, 300);
-
-            // Play explosion sound
+          
+            // Explosion Sound abspielen
             const explosionSound = document.getElementById("explosion-sound");
             explosionSound.play();
-
-            score++;
-            resultsDisplay.textContent = `Score: ${score}`;
+          
+            score++; // Erhöhe den Score
+            resultsDisplay.textContent = `Score: ${score}`; // Aktualisiere die Anzeige des Scores
           } else {
             invader.classList.add("hit");
             setTimeout(() => invader.classList.remove("hit"), 300);
           }
+          
         }
       });
 
