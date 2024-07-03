@@ -24,7 +24,6 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-
   color: #fff;
   font-family: "Courier New", Courier, monospace;
 }
@@ -415,6 +414,10 @@ body {
 .projects-container {
   max-width: 1200px;
   margin: 20px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
 }
 
 .projects-container h1 {
@@ -493,6 +496,10 @@ body {
 .labs-container {
   max-width: 1200px;
   margin: 20px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
 }
 
 .labs-container h1 {
@@ -514,8 +521,6 @@ body {
   transition: transform 0.3s, background-color 0.3s;
   width: 300px;
   text-align: left;
-  display: flex;
-  flex-direction: column-reverse;
 }
 
 .lab-card img {
