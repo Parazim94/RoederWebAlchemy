@@ -100,7 +100,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const body = document.querySelector("body");
   const menuIcon = document.getElementById("menu-icon");
   const dropdownMenu = document.getElementById("dropdown-menu");
-
+  
   // Funktion zum Verstecken des Intros
   const hideIntro = () => {
     intro.classList.add("hidden");

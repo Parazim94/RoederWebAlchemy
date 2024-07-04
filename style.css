@@ -637,22 +637,32 @@ body {
   background-color: #0056b3;
 }
 
+/* Styling für die Navigationspfeile */
 .arrow {
   cursor: pointer;
-  font-size: 3rem;
-  padding: 0.1rem;
+  font-size: 2rem;
+  padding: 0.5rem;
   color: #fff;
   text-decoration: none;
-  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
   position: fixed;
   background-color: #383838;
-  border-radius: 4px;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 .arrow:hover {
   transform: scale(1.2);
+  background-color: #4a4a4a;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
 }
 
+/* Spezifische Positionierung für linke und rechte Pfeile */
 .arrow.left {
   left: 10px;
 }
@@ -660,6 +670,23 @@ body {
 .arrow.right {
   right: 10px;
 }
+
+/* Pulsierende Animation */
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  }
+  50% {
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+  }
+}
+
+.arrow {
+  animation: pulse 2s infinite;
+}
+
 
 .skills {
     display: flex;
