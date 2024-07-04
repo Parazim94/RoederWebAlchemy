@@ -300,13 +300,9 @@ body {
 }
 
 .menu-icon {
-  position: absolute;
+  position: fixed;
   top: 10px;
   right: 10px;
-  font-size: 24px;
-  cursor: pointer;
-  z-index: 15;
-  color: #fff;
 }
 
 .menu-icon a {
@@ -314,9 +310,51 @@ body {
   text-decoration: none;
 }
 
-.menu-icon:hover .fas {
-  transform: scale(1.2);
-  transition: transform 0.3s;
+.menu-icon i {
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: white;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  right: 0;
+  top: 30px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.dropdown-menu a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.dropdown-menu a i {
+  margin-right: 10px;
+}
+
+.dropdown-menu a:hover {
+  background-color: #f1f1f1;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+#menu-toggle:checked + .menu-icon + .dropdown-menu {
+  display: block;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
 }
 
 .menu-container {
@@ -684,3 +722,4 @@ body {
     margin: 0;
     font-size: 16px;
 }
+

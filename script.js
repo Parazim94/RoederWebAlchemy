@@ -98,6 +98,8 @@ document.addEventListener("DOMContentLoaded", () => {
   const intro = document.querySelector(".intro");
   const gameContainer = document.querySelector(".game-container");
   const body = document.querySelector("body");
+  const menuIcon = document.getElementById("menu-icon");
+  const dropdownMenu = document.getElementById("dropdown-menu");
 
   // Funktion zum Verstecken des Intros
   const hideIntro = () => {

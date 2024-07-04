@@ -43,12 +43,20 @@
         <img src="/images/linkedin.webp" alt="LinkedIn" />
       </a>
     </div>
-    <div class="menu-icon">
-      <a href="menu.html"><i class="fas fa-bars"></i></a>
+    <input type="checkbox" id="menu-toggle" />
+    <label for="menu-toggle" class="menu-icon"
+      ><i class="fas fa-bars"></i
+    ></label>
+    <div class="dropdown-menu">
+      <a href="about.html"><i class="fas fa-user"></i> About</a>
+      <a href="projects.html"><i class="fas fa-briefcase"></i> Projects</a>
+      <a href="labs.html"><i class="fas fa-flask"></i> Labs</a>
+      <a href="contact.html"><i class="fas fa-envelope"></i> Contact</a>
     </div>
     <div class="navigation">
       <a href="about.html" class="arrow left">&lt;</a>
       <a href="labs.html" class="arrow right">&gt;</a>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>
