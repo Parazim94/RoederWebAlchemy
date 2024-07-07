@@ -372,7 +372,7 @@ body {
   align-items: center;
   width: 100%;
   max-width: 75rem;
-  margin-top: 10%;
+  margin-top: 5%;
 }
 
 .about-content {
@@ -491,11 +491,11 @@ body {
   flex-direction: column;
   text-align: center;
   align-items: center;
+  margin-top: 5%;
 }
 
 .projects-container h1 {
   margin-bottom: 1.25rem;
-  margin-top: 15%;
 }
 
 .projects-grid {
@@ -561,7 +561,7 @@ body {
   flex-direction: column;
   text-align: center;
   align-items: center;
-  margin-top: 10%;
+  margin-top: 5%;
 }
 
 .labs-container h1 {
@@ -651,7 +651,7 @@ body {
   border-radius: var(--border-radius);
   box-shadow: var(--box-shadow);
   text-align: left;
-  margin-top: 15%;
+  margin-top: 5%;
 }
 
 .contact-container h1 {
