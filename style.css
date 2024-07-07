@@ -250,8 +250,9 @@ body {
   text-align: center;
   font-size: 1.5rem;
   background-color: #4242429c;
-  padding: 0.625rem;
+  padding: 2.6rem;
   border-radius: var(--border-radius);
+  margin-top: 5%;
 }
 
 .ribbon {
