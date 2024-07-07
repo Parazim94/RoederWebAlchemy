@@ -353,81 +353,109 @@ body {
   margin-top: 20px;
 }
 
-.menu-container {
+.about-container {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  gap: 20px;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1200px;
 }
 
-.menu-card {
-  width: 300px;
-  padding: 20px;
+.about-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  max-width: 1200px;
   background-color: #383838;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  transition: transform 0.3s, background-color 0.3s;
-  text-align: center;
-}
-
-.menu-card a {
-  color: #fff;
-  text-decoration: none;
-  font-size: 18px;
-}
-
-.menu-card:hover {
-  background-color: #4a4a4a;
-  transform: translateY(-5px);
-}
-
-.menu-card a:hover {
-  color: #ffd700; /* Gold color on hover */
-}
-
-.menu-card,
-.about-card {
-  width: 300px;
-  padding: 20px;
-  background-color: #383838;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  transition: transform 0.3s, background-color 0.3s;
-  text-align: center;
-}
-
-.menu-card a,
-.about-card a {
-  color: #fff;
-  text-decoration: none;
-  font-size: 18px;
-}
-
-.menu-card:hover,
-.about-card:hover {
-  background-color: #4a4a4a;
-  transform: translateY(-5px);
-}
-
-.menu-card a:hover,
-.about-card a:hover {
-  color: #ffd700; /* Gold color on hover */
 }
 
 .profile-photo {
-  width: 100%;
+  width: 20%;
   border-radius: 10px;
-  margin-bottom: 10px;
+  margin-right: 20px;
+}
+
+.about-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.about-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  max-width: 1200px;
+  background-color: #383838;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+}
+
+.profile-photo {
+  width: 20%;
+  border-radius: 10px;
+  margin-right: 20px;
+  min-width: 100px;
+}
+
+.about-card {
+  flex: 1;
 }
 
 .about-card h1 {
-  margin: 8px 0 8px 0;
+  margin: 8px 0;
 }
 
 .about-card p {
   font-size: 16px;
   line-height: 1.5;
+}
+
+.skills-card {
+  background-color: #383838;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  text-align: center;
+  width: 90%;
+  max-width: 1200px;
+}
+
+.skills-card h2 {
   margin-bottom: 20px;
+}
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.skill {
+  padding: 5px;
+  transition: transform 0.3s;
+}
+
+.skill:hover {
+  transform: scale(1.1);
+}
+
+.skill i {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.skill p {
+  margin: 0;
+  font-size: 16px;
 }
 
 .menu-link {
@@ -644,7 +672,8 @@ body {
   padding: 0.5rem;
   color: #fff;
   text-decoration: none;
-  transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.3s ease, background-color 0.3s ease,
+    box-shadow 0.3s ease;
   position: fixed;
   background-color: #383838;
   border-radius: 50%;
@@ -673,7 +702,8 @@ body {
 
 /* Pulsierende Animation */
 @keyframes pulse {
-  0%, 100% {
+  0%,
+  100% {
     transform: scale(1);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
   }
@@ -686,31 +716,3 @@ body {
 .arrow {
   animation: pulse 2s infinite;
 }
-
-
-.skills {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 30px;
-}
-
-.skill {
-  padding: 5px;
-  transition: transform 0.3s;
-}
-
-.skill:hover {
-    transform: scale(1.1);
-}
-
-.skill i {
-    font-size: 40px;
-    margin-bottom: 10px;
-}
-
-.skill p {
-    margin: 0;
-    font-size: 16px;
-}
-
