@@ -604,6 +604,12 @@ body {
   justify-content: space-between;
 }
 
+.labs-container h1, .projects-container h1{
+  background-color: var(--background-color);
+  border-radius: 0.7rem;
+  padding: 1rem;
+}
+
 .lab-card h2 {
   margin: 0 0 0.625rem 0;
   font-size: 1.5rem;
