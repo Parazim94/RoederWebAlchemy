@@ -82,7 +82,7 @@ body {
 .grid {
   width: 600px;
   height: 800px;
-  background-color: #111;
+  background-color: #1111119c;
   position: relative;
   border-radius: 25px;
 }
@@ -235,6 +235,9 @@ body {
   color: white;
   text-align: center;
   font-size: 24px;
+  background-color: #4242429c;
+  padding: 10px;
+  border-radius: 10px;
 }
 
 .ribbon {
@@ -364,7 +367,7 @@ body {
   justify-content: space-between;
   width: 90%;
   max-width: 1200px;
-  background-color: #383838;
+  background-color: #383838d3;
   border-radius: 10px;
   padding: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -392,7 +395,7 @@ body {
 }
 
 .skills-card {
-  background-color: #383838;
+  background-color: #383838c4;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   padding: 20px;
@@ -433,7 +436,7 @@ body {
 }
 
 .experience-card {
-  background-color: #383838;
+  background-color: #383838c2;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   padding: 20px;
@@ -489,7 +492,7 @@ body {
 }
 
 .project-card {
-  background-color: #383838;
+  background-color: #383838d2;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   overflow: hidden;
@@ -557,7 +560,7 @@ body {
 }
 
 .lab-card {
-  background-color: #383838;
+  background-color: #383838cb;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   overflow: hidden;
@@ -610,7 +613,7 @@ body {
   max-width: 600px;
   margin: 20px;
   padding: 20px;
-  background-color: #383838;
+  background-color: #383838cc;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   text-align: left;
@@ -638,7 +641,7 @@ body {
   padding: 10px;
   border: none;
   border-radius: 5px;
-  background-color: #4a4a4a;
+  background-color: #4a4a4ac7;
   color: #fff;
 }
 
