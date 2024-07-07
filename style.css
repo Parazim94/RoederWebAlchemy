@@ -517,12 +517,13 @@ body {
 
 .project-card img {
   width: 100%;
-  height: 11.25rem;
+  height: 13.75rem;
   object-fit: cover;
+  padding: 1rem;
 }
 
 .project-card h2 {
-  margin: 0.9375rem;
+  margin: 0.6375rem;
   font-size: 1.5rem;
 }
 
@@ -551,6 +552,8 @@ body {
   background-color: #4a4a4a;
   transform: translateY(-0.3125rem);
 }
+
+
 
 .labs-container {
   max-width: 75rem;
