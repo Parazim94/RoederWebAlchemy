@@ -254,7 +254,7 @@ body {
   display: block;
   width: 200px;
   padding: 10px 0;
-  background: #007bff;
+  background: #007bffd5;
   color: #fff;
   text-align: center;
   font: bold 13px Arial, sans-serif;
@@ -663,6 +663,23 @@ body {
 
 .contact-form button:hover {
   background-color: #0056b3;
+}
+
+.contact-info {
+  background-color: #2c2c2c7a;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  color: #fff;
+  margin-top: 20px;
+}
+
+.contact-info p {
+  margin: 10px 0;
+}
+
+.contact-info strong {
+  color: #007bffd8;
 }
 
 /* Styling für die Navigationspfeile */
